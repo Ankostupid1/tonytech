@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./img/tony.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <header>
+        <nav>
+            <div id="company-name" align="left">
+                <p>TonyTech.Co <p> 
+                    <br>
+                <small>Excellence in every pixel</small></h1>
+            </div>
+
+            <div class="logo" align="right">
+                <img src="img/ANKOSTUPID (1).png" alt="TonyTech Logo">
+            </div>
+           
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or would like to discuss a project, feel free to reach out!</p>
+            <h2>Email</h2>
+            <h4>Contact us via email:</h4>
+            <p>tonytech858@gmail.com</p>
+            <h2>Phone</h2>
+            <h4>Call us at:</h4>
+            <p>+254 781 225204</p>
+            <h2>Address</h2>
+            <h4>Our office is located at:</h4>
+            <p>Nairobi, Kenya</p>
+        </section>
+
+        <section class="appointment-form">
+            <h2>Book an Appointment with us</h2>
+            <form id="appointmentForm" action="./php/submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="username@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254 712 345678" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <p class="formp">N/B: Please note that the preferred date and time are subject to availability.</p>
+                <button type="submit">Book Appointment</button>
+
+                
+            </form>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <p>&copy; 2025 TonyTech. All rights reserved. <br><br> EXCELLENCE IN EVERY PIXEL</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
